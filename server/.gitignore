@@ -1,0 +1,17 @@
+# Ignore node_modules
+node_modules/
+./server/node_modules/
+
+
+# Ignore environment files
+.env
+server/.env
+blog-app/frontend/.env
+
+# Ignore build folders
+blog-app/dist/
+server/dist/
+
+# Ignore logs
+logs/
+*.log

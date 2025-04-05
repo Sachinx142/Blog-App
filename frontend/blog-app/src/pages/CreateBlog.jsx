@@ -39,7 +39,7 @@ const CreateBlog = () => {
           <label className="form-label">Image URL</label>
           <input type="text" name="image" className="form-control" onChange={handleChange} />
         </div>
-        <button type="submit" className="btn btn-success">Submit</button>
+        <button type="submit" className="btn btn-success w-100 my-2">Submit</button>
       </form>
     </div>
   );

@@ -1,3 +1,7 @@
+body{
+  background-color: #C2FFFF;
+  font-family: 'Poppins', sans-serif;
+}
 .blog-card {
     width: 100%;
     max-width: 350px; 
@@ -63,6 +67,179 @@
 }
 
 
+  .backgrond{
+    background-color: #9ACBD0;
+    color: #000;
+    border-radius:5px;
+  }
+
+
+  .register-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+.register-card{
+    background-color: #1a1a40;
+    padding:40px;
+    border-radius:15px;
+    width:400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+.register-card:hover{
+    transform: scale(1.03);
+}
+.register-title{
+    color: #4cc9f0;
+    text-align:center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.register-form{
+    display: flex;
+    flex-direction: column;
+}
+.register-input{
+    background-color:  #252552;
+    border: 2px solid #4cc9f0;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #4cc9f0;
+    transition: border-color 0.3s;
+}
+.register-input:focus{
+    border-color: #3a0ca3;
+    outline: none;
+}
+.register-button{
+    background-color: #4cc9f0;
+    color: #1a1a40;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #3a0ca3;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background-color: #1e1e2f;
+  padding: 40px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+
+.login-card:hover {
+  transform: scale(1.02);
+}
+
+.login-title {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  background-color: #2a2a40;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  transition: border-color 0.3s;
+}
+
+.login-input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.login-button{
+  background-color: #FFD700;
+  color: #1e1e2f;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #ff6f61;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  color: #f0f0f0 !important;
+}
+
+.nav-link {
+  color: #cccccc !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #ff1a1a;
+}
+
+
+.no-hover {
+  background-color: #28a745 !important; /* Green button */
+  border-color: #28a745 !important;
+}
+
+.no-hover:hover {
+  background-color: #28a745 !important; /* Prevent color change on hover */
+  border-color: #28a745 !important;
+}
+
+.nav-btn{
+  height:40px;
+  max-width: 120px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  white-space: nowrap;
+}
+
   /* ✅ Responsive Design */
   @media (max-width: 768px) {
     .blog-card {
@@ -87,4 +264,3 @@
     }
   }
 
-  

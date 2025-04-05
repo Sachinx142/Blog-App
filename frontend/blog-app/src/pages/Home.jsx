@@ -1,17 +1,32 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import BlogCard from "../components/BlogCard";
+import { useNavigate } from "react-router-dom";
+import '../App.css'
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
+  const navigate = useNavigate()
 
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
+  useEffect(()=>{
+     const token = localStorage.getItem('token');
 
-  const fetchBlogs = async () => {
+     if(!token){
+         // If the user is not logged in, redirect them to the login page
+         navigate('/login')
+     }
+     else{
+      fetchBlogs(token);
+     }
+
+  },[navigate]);
+
+
+  const fetchBlogs = async (token) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/blogs");
+      const response = await axios.get("http://localhost:5000/api/blogs",{
+        headers:{Authorization:`Bearer ${token}`}
+      });
       setBlogs(response.data);
     } catch (err) {
       console.error("Error fetching blogs:", err);
